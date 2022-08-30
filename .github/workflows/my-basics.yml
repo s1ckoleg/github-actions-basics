@@ -24,7 +24,7 @@ jobs:
     
           
   my_deploy:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     
     steps:
     - name: Print hello message
