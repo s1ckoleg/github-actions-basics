@@ -1,5 +1,5 @@
 # ------------------------------------------------
-# Program by Denis Astahov
+# Program by Oleg Kalashnikov
 #
 #
 # Version      Date           Info
