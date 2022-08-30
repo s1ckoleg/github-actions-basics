@@ -51,4 +51,10 @@ jobs:
     - name: Print deployement package
       run: | 
         echo "Deploy package name: ${{ env.DEPLOY_PACKAGE_NAME }}"
+        
+    - name: Test AWS
+      run: aws --version
+     
+    - name: Test zip
+      run: zip
     
