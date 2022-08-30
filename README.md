@@ -1,4 +1,3 @@
-Status of the last deployment:<br>
-<img src="https://github.com/s1ckoleg/github-actions-basics/actions/workflows/my-github-actions-basics/badge.svg?branch=main"><br>
+![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
 
 Copyleft by Oleg Kalashnikov 2022.
