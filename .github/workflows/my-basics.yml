@@ -44,9 +44,21 @@ jobs:
     
     needs: my_testing
     
+    env:
+      VAR1: "Deploy variable 1"
+      VAR2: "Deploy variable 2"
+    
     steps:
     - name: Print hello message
       run: echo "Hello World from deploying"
+      
+    - name: Print some vars
+      env:
+        LOCAL_VAR: "Task local var"
+      run: |
+        echo "Var1 = ${{ env.VAR1 }}"
+        echo "Var2 = ${{ env.VAR2 }}"
+        echo "Local var = $LOCAL_VAR"
       
     - name: Print deployement package
       run: | 
@@ -56,5 +68,5 @@ jobs:
       run: aws --version
      
     - name: Test zip
-      run: zip
+      run: zip --version
     
