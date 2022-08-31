@@ -67,6 +67,6 @@ jobs:
     - name: Test AWS
       run: aws --version
      
-    - name: Test zip
-      run: zip --version
+    - name: Zip cloned repo
+      run: zip -r my_zip.zip ./ -x "*.git*"
     
