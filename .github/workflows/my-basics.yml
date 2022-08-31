@@ -35,6 +35,9 @@ jobs:
     - name: Git clone my repo
       uses: actions/checkout@v1
       
+    - name: Zip cloned repo
+      run: zip -r my_zip.zip ./ -x "*.git*"
+      
     - name: List current folder
       run: ls -la
       
@@ -66,7 +69,5 @@ jobs:
         
     - name: Test AWS
       run: aws --version
-     
-    - name: Zip cloned repo
-      run: zip -r my_zip.zip ./ -x "*.git*"
+   
     
